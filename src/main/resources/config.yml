@@ -1,0 +1,74 @@
+storage:
+  host: localhost
+  port: 3306
+  username: "root"
+  password: "pa$$w0rd"
+  database: "database"
+  table-prefix: "pl_"
+  max-pool-size: 8
+  min-idle: 8
+  max-lifetime: 1800000
+  connection-timeout: 5000
+permissions:
+  reload: "playerlevels.reload"
+commands:
+  - "playerlevels"
+requirement-completed-format: "&7➥ &a&l✔ &f%task% %amount%/%max%"
+requirement-inprogress-format: "&7➥ &c&l✘ &f%task% %amount%/%max%"
+reward-format: "&7➥ &f%reward%"
+gui:
+  title: "&a&lQuests &7(&f%page%&7/&f%max_page%&7)"
+  items:
+    next-page:
+      item: ARROW
+      displayname: "&aNext Page"
+      lore:
+        - ""
+    previous-page:
+      item: ARROW
+      displayname: "&aPrevious Page"
+      lore:
+        - ""
+    default:
+      item: GREEN_STAINED_GLASS_PANE
+      displayname: "&a&lQuest 0"
+      lore:
+        - " "
+        - "&7This quest is unlocked by"
+        - "&7default"
+    completed:
+      item: GREEN_STAINED_GLASS_PANE
+      displayname: "&a&lQuest %quest_id% &7(%quest_name%&7)"
+      lore:
+        - " "
+        - "&7Requires:"
+        - "%requirements%"
+        - " "
+        - "&7Rewards:"
+        - "%rewards%"
+    in_progress:
+      item: YELLOW_STAINED_GLASS_PANE
+      displayname: "&a&lQuest %quest_id% &7(%quest_name%&7)"
+      lore:
+        - " "
+        - "&7Requires:"
+        - "%requirements%"
+        - " "
+        - "&7Rewards:"
+        - "%rewards%"
+        - " "
+      completed-lore:
+        - "&aClick to claim your rewards!"
+      uncompleted-lore:
+        - "&7Click to update the quest status"
+        - "&aYou are currently on this quest"
+    future:
+      item: RED_STAINED_GLASS_PANE
+      displayname: "&c&lQuest %quest_index%"
+      lore:
+        - " "
+        - "&7Requires:"
+        - "&7➥ &c&l???"
+        - " "
+        - "&7Rewards:"
+        - "&7➥ &c&l???"

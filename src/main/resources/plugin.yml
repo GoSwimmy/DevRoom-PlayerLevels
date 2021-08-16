@@ -1,0 +1,12 @@
+name: PlayerLevels
+version: 1.0
+main: com.goswimmy.playerlevels.PlayerLevelsPlugin
+api-version: 1.17
+authors: [ Sage ]
+description: Commission for 449140165412257792
+website: https://goswimmy.com
+depend:
+  - zAuctionHouseV3
+  - Votifier
+commands:
+  quests:

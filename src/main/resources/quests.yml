@@ -1,0 +1,47 @@
+quests:
+  0:
+    name: "&aDefault"
+    prefix: "&7[&a%quest_id%&7]"
+    tasks:
+      - "default"
+    rewards:
+      lore:
+        - "default"
+  1:
+    name: "&aMiner"
+    prefix: "&7[&a%quest_id%&7]"
+    tasks:
+      - "mine:15:COAL_ORE:&aMine 15 Coal Ore"
+      - "mine:10:IRON_ORE:&aMine 10 Iron Ore"
+    rewards:
+      lore:
+        - "&a1x Diamond Axe"
+      commands:
+        - "give %player% diamond_axe"
+  2:
+    name: "&aLumberjack"
+    prefix: "&7[&a%quest_id%&7]"
+    tasks:
+      - "mine:32:OAK_LOG:&aBreak 32 Oak Logs"
+      - "ahsell:5:items:&aSell 5 Items on AH"
+      - "mine:32:ACACIA_LOG:&aBreak 32 Acacia Logs"
+      - "mine:32:JUNGLE_LOG:&aBreak 32 Jungle Logs"
+    rewards:
+      lore:
+        - "&a1x Diamond Sword"
+      commands:
+        - "give %player% diamond_sword"
+  3:
+    name: "&aHunter"
+    prefix: "&7[&a%quest_id%&7]"
+    tasks:
+      - "kill:8:SKELETON:&aKill 8 Skeletons"
+      - "kill:10:ZOMBIE:&aKill 10 Zombies"
+      - "kill:5:SPIDER:&aKill 5 Spiders"
+    rewards:
+      lore:
+        - "&a3x Carrot"
+        - "&a3x Potato"
+      commands:
+        - "give %player% carrot 3"
+        - "give %player% potato 3"

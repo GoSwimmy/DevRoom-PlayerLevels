@@ -1,0 +1,9 @@
+messages:
+  prefix: "#57C84D&lPlayerLevels »"
+  reload: "&aAll files have been reloaded!"
+  no-permission: "&cYou do not have permission to use this command!"
+  new-quest: "&aYou are now on Quest %quest_id%"
+  quest-already-completed: "&cYou already reached this level!"
+  task-completed: "&a&lTask completed! &7View all using /quests\n&a&l✔ &f%type% %amount% %object%"
+  task-uncomplete: "&cYou do not meet the requirements to proceed!"
+  locked-quest: "&cYou need to unlock lower tiers first!"
